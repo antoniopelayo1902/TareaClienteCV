@@ -1,0 +1,57 @@
+{
+  "basics": {
+    "name": "Antonio ",
+    "title": "Ingeniero en Desarrollo de Software",
+    "summary": "Desarrollador back-end",
+    "location": "Guadalajara, Jalisco, MX",
+    "email": "antonio.pelayo.cv@outlook.com",
+    "phone": "+52 33 19869596",
+    "avatar": "assets/images/avatar-placeholder.png",
+    "socials": [
+      { "label": "GitHub", "url": "https://github.com/antoniopelayo1902" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/antoniopelayo1902" }
+    ]
+  },
+  "skills": ["Java", "Spring Boot", "Python", "Selenium", "Playwright", "Cassandra", "MongoDB", "Dgraph", "GitHub Actions", "Unity", "Alexa Skills"],
+  "projects": [
+    {
+      "name": "Proyecto A",
+      "description": "API REST con Spring Boot + JWT.",
+      "link": "https://github.com/antoniopelayo1902/Clase4",
+      "image": "assets/images/proyecto-a.png"
+    },
+    {
+      "name": "Proyecto B",
+      "description": "Dashboard de datos con Python + Plotly.",
+      "link": "https://github.com/antoniopelayo1902/clase-3",
+      "image": "assets/images/proyecto-b.png"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Oracle",
+      "role": "Software Engineering Intern",
+      "start": "Julio 2025",
+      "end": "Presente",
+      "description": "Automatización de pruebas, pipelines CI/CD, y microservicios Java."
+    },
+    {
+      "company": "HP",
+      "role": "Software Engineering Intern",
+      "start": "Enero 2025",
+      "end": "Junio 2025",
+      "description": "Creacion de Dashboard con PowerBi"
+    }
+  ],
+  "education": [
+    {
+      "school": "ITESO",
+      "degree": "Ing. en Desarrollo de Software",
+      "start": "2023",
+      "end": "2026"
+    }
+  ],
+  "contact": {
+    "email": "antonio.pelayo.cv@outlook.com"
+  }
+}

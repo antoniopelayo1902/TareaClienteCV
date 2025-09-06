@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - <span id="page-title-fallback">Cargando...</span></title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <meta name="description" content="CV en línea" />
+</head>
+<body>
+  <noscript>Esta aplicación requiere JavaScript para cargar los datos del CV.</noscript>
+
+  <header class="site-header container">
+    <div class="profile">
+      <img id="avatar" class="avatar" alt="Foto de perfil" src="./assets/images/avatar-placeholder.png" />
+      <div>
+        <h1 id="name">Tu Nombre</h1>
+        <p id="title" class="subtitle">Tu título / rol</p>
+        <ul id="socials" class="socials"></ul>
+      </div>
+    </div>
+    <div class="contact">
+      <p><strong>Email:</strong> <a id="email" href="#">—</a></p>
+      <p><strong>Tel:</strong> <span id="phone">—</span></p>
+  
+      <p><strong>Ubicación:</strong> <span id="location">—</span></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Resumen</h2>
+      <p id="summary">Cargando...</p>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul id="skills" class="chips"></ul>
+    </section>
+
+    <section>
+      <h2>Proyectos</h2>
+      <div id="projects" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>Experiencia</h2>
+      <div id="experience"></div>
+    </section>
+
+    <section>
+      <h2>Educación</h2>
+      <div id="education"></div>
+    </section>
+
+    <section id="contact-section">
+      <h2>Contacto</h2>
+      <form id="contact-form" method="POST" novalidate>
+       
+        <div class="form-field">
+          <label for="cf-name">Nombre</label>
+          <input id="cf-name" name="name" type="text" required />
+          <small class="error" data-error-for="cf-name"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" required />
+          <small class="error" data-error-for="cf-email"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="cf-message">Mensaje</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+          <small class="error" data-error-for="cf-message"></small>
+        </div>
+
+  
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu CV online" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-feedback" class="form-feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+ 
+
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@use 'variables' as v;
+@use 'mixins';
+@use 'extends';
+
+body {
+  font-family: v.$font-main;
+  color: v.$text-color;
+  background-color: v.$background-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: v.$primary-color;
+  color: white;
+  padding: 1rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+main {
+  @include mixins.container;
+
+  section {
+    margin: 2rem 0;
+  }
+}
+
+button {
+  @extend %button-base;
+  background-color: v.$secondary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken(v.$secondary-color, 10%);
+  }
+}
+
+// Ejemplo de media query
+@include mixins.respond-to(small) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    text-align: center;
+  }
+}

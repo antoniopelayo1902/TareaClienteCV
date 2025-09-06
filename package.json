@@ -1,0 +1,30 @@
+{
+  "name": "tarea-4",
+  "version": "1.0.0",
+  "description": "CV online con HTML, Sass y TypeScript. Build con Gulp + esbuild.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build",
+     "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "cross-env": "^10.0.0",
+    "cssnano": "^7.1.1",
+    "del": "^8.0.0",
+    "esbuild": "^0.25.9",
+    "gulp": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.92.1",
+    "typescript": "^5.9.2"
+  }
+}

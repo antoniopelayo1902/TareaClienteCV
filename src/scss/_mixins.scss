@@ -1,0 +1,27 @@
+
+
+@use 'variables' as v;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: v.$max-width; 
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (max-width: 1200px) { @content; }
+  }
+}
